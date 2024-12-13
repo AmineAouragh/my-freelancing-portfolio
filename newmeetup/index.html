@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meetup | Find Local Groups, Events, and Activities Near You</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/11296d3f08.js" crossorigin="anonymous"></script>
+      </head>
+    <body>
+        <nav id="topnav">
+            <div>
+                <img src="assets/meetup-logo.png" alt="Meetup logo" width="140" height="80" />
+                <ul class="navlist">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link">Top Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Popular Cities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Topics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Apps</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Podcast</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Become an affiliate</a>
+                  </li>
+                </ul>
+            </div>
+            <ul class="navlist">
+                <li class="nav-item">
+                    <a class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link signup">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="hero">
+            <img src="assets/meetup-logo-notext.png" alt="Meetup Logo" width="200" height="190" />
+            <h1>The people platform—Where interests become <span id="toreplace" style="color:#f65858">friendships</span>.</h1>
+            <p>Whatever your interest, from hiking and reading to networking and skill sharing, there are thousands of people who share it on Meetup. Events are happening every day—join the fun.</p>
+            <div id="search">
+                <input type="text" style="margin-right:0px;" name="events" id="events" placeholder="Search Events, Groups..." />
+                <input type="text" name="location" id="location" placeholder="Neighborhood, city or ZIP" />
+                <button type="button" id="searchbtn">🔍</button>
+            </div>
+            <button type="button" class="join" id="search_btn">Search Events</button>
+        </section>
+        <section id="how-it-works">
+          <div>
+            <h2>Meetup creates possibilities to find and build local communities</h2>
+            <img src="assets/outdoor.jpg" alt="" width="800" height="500" id="img-for-mobile" />
+            <p style="margin-bottom:25px;">People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together.</p>
+            <button type="button" class="register-btn">Join Meetup</button>
+          </div>
+          <img src="assets/outdoor.jpg" alt="" id="img-for-desktop" width="800" height="500" />
+        </section>
+        <section id="top-categories">
+          <h3>Explore top categories</h3>
+          <p style="font-size:17px;font-weight:500;margin-top:0px;font-family: 'Parkinsans', sans-serif;">Click on a category below to learn more</p>
+          <div>
+            <li class="category-item" style="border-style:solid;border-width: 2px;border-color:#00455d;">
+              <span>🌲</span>
+              <a>Travel and Outdoor</a>
+            </li>
+            <li class="category-item">
+              <span>🍕</span>
+              <a>Social Activities</a>
+            </li>
+            <li class="category-item">
+              <span>🎨</span>
+              <a>Hobbies and Passions</a>
+            </li>
+            <li class="category-item">
+              <span>⚽</span>
+              <a>Sports and Fitness</a>
+            </li>
+            <li  class="category-item">
+              <span>🌷</span>
+              <a>Health and Wellbeing</a>
+            </li>
+            <li class="category-item">
+              <span>🤖</span>
+              <a>Technology</a>
+            </li>
+            <li class="category-item">
+              <span>🎭</span>
+              <a>Art and Culture</a>
+            </li>
+            <li class="category-item">
+              <span>🎮</span>
+              <a>Games</a>
+            </li>
+          </div>
+          <p id="category-desc">Since 2002, Meetup has helped bring people together at events for shared interests and spark new friendships. Whether you like hiking and biking or kayaking and running, there are outdoor groups for your interests on Meetup. Join groups to find local activities and meet people who share your passion for the outdoors.</p>
+          <div id="category-tags">
+            <div class="tag">Hiking</div>
+            <div class="tag">Camping</div>
+            <div class="tag">International Travel</div>
+            <div class="tag">Outdoor Fitness</div>
+            <div class="tag">Weekend Adventure</div>
+          </div>
+          <button type="button"class="join">Join Travel and Outdoor Groups</button>
+        </section>
+        <section id="popular-cities">
+          <h3 style="margin-bottom:0px;">Popular Cities on Meetup</h3>
+          <p style="margin-top:0px;margin-bottom:25px;">See what Meetup organizers are planning in cities around the country.</p>
+          <div id="cities">
+            <div class="city">
+              <img class="city-pic" src="assets/new-york-city.jpg" alt="New York City picture" width="180" height="180" />
+              <p class="city-name">New York</p>
+            </div>
+            <div class="city">
+              <img class="city-pic" src="assets/london.jpg" alt="London picture" width="180" height="180" />
+              <p class="city-name">London</p>
+            </div>
+            <div class="city">
+              <img class="city-pic" src="assets/paris.jpg" alt="Paris picture" width="180" height="180" />
+              <p class="city-name">Paris</p>
+            </div>
+            <div class="city">
+              <img class="city-pic" src="assets/tokyo.jpg" alt="Tokyo picture" width="180" height="180" />
+              <p class="city-name">Tokyo</p>
+            </div>
+            <div class="city">
+              <img class="city-pic" src="assets/dubai.jpg" alt="Dubai picture" width="180" height="180" />
+              <p class="city-name">Dubai</p>
+            </div>
+            <div class="city" style="height: 260px;">
+              <div class="explore">+</div>
+              <p style="color:#00455d;">Explore more cities</p>
+            </div>
+          </div>
+          <div style="display: flex;flex-direction: column;align-items: center;">
+            <p>Looking for fun things to do near you? See who&apos;s hosting local events for all the things you love.</p>
+            <button type="button" class="join">Search Events</button>
+          </div>
+        </section>
+        <section id="numbers">
+          <h3>The numbers</h3>
+          <p>Here&apos;s an overview of how we&apos;re impacting communities in 193 countries and 10,000 cities worldwide</p>
+          <div id="stats">
+            <div>
+              <p style="font-size: 35px;font-weight: 700;margin-bottom:10px;">52 million+</p>
+              <p>Members on the platform</p>
+            </div>
+            <div>
+              <p style="font-size: 35px;font-weight: 700;margin-bottom:10px;">300000+</p>
+              <p>Meetup groups</p>
+            </div>
+            <div>
+              <p style="font-size: 35px;font-weight: 700;margin-bottom:10px;">100000+</p>
+              <p>Meetup events per week</p>
+            </div>
+          </div>
+        </section>
+        <section id="apps">
+          <div>
+            <h3>Keep Connected</h3>
+            <p style="font-family: 'Parkinsans', sans-serif;color:#212121;font-size:16px;line-height:22px;margin-top:0px;">Use the Meetup app to find upcoming events and keep connected to your community.</p>
+            <div style="display: flex;flex-direction: row;align-items: center;">
+              <img src="assets/app-store.png" alt="App Store logo" width="196" height="65" style="margin-right:8px;" />
+              <img src="assets/google-play.png" alt="Google Play" width="196" height="65" />
+             </div>
+          </div>
+          <img src="assets/meetup-apps-image.png" width="652" height="776" alt="" />
+        </section>
+        <section id="blog">
+          <div id="blog-header">
+            <h3>Friendships are made on Meetup</h3>
+            <button type="button" class="join">Create a Meetup Group</button>
+          </div>
+          <p style="margin-top: 0px; color: #707070;font-family: 'Parkinsans', sans-serif;line-height:20px;width:75%;margin-bottom: 0px;">Since 2002, members have used Meetup to make new friends, meet like-minded people, spend time on hobbies, and connect with locals over shared interests. Learn how.</p>
+          <div id="posts-container">
+            <div class="post-item">
+              <img class="thumbnail" src="assets/post-1.png" alt="" width="420" height="266" />
+              <h4>I Used Meetup to Make Friends at Brunch</h4>
+              <p class="excerpt">New Jersey-based writer and college student Brianna Stryker wanted to meet friends in her hometown. Learn how she used Meetup to make connections by joining a Girls Night Out Meetup group.</p>
+              <a>Read more</a>
+            </div>
+            <div class="post-item">
+              <img class="thumbnail" src="assets/post-2.jpg" alt="" width="420" height="266" />
+              <h4>How to Turn Casual Connections into Close Friendships</h4>
+              <p class="excerpt">It&apos;s proven that close friendships are harder to make as an adult. But don&apos;t sweat it: here&apos;s what you can do to simplify the process.</p>
+              <a>Read more</a>
+            </div>
+            <div class="post-item">
+              <img class="thumbnail" src="assets/post-3.jpg" alt="" width="420" height="266" />
+              <h4>Do You Have the “Right” Number of Friends?</h4>
+              <p class="excerpt">Studies from around the world have tried to help people answer this question. Learn about the three tiers of friendship and how to fulfill them.</p>
+              <a>Read more</a>
+            </div>
+          </div>
+        </section>
+        <footer style="width:1464px;margin-top:80px;margin-bottom:80px;padding-right:15px;padding-left:15px;background-color:rgb(237, 28, 64);border-radius:20px;">
+          <img src="assets/meetup-logo-notext.png" alt="Meetup Logo" height="100" width="120" />
+          <div style="width:80%;display:flex;flex-direction:column;justify-content: center;">
+            <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-evenly;margin-bottom:20px;width:100%;">
+              <div style="margin-right:50px;">
+                <h4>Your Account</h4>
+                <ul>
+                  <li>Sign up</li>
+                  <li>Log in</li>
+                  <li>Help</li>
+                  <li>Become an Affiliate</li>
+                </ul>
+              </div>
+              <div style="margin-right: 50px;">
+                <h4>Discover</h4>
+                <ul>
+                  <li>Groups</li>
+                  <li>Calendar</li>
+                  <li>Topics</li>
+                  <li>Cities</li>
+                  <li>Online Events</li>
+                  <li>Local Guides</li>
+                  <li>Make Friends</li>
+                </ul>
+              </div>
+              <div style="margin-right: 50px;">
+                <h4>Meetup</h4>
+                <ul>
+                  <li>About</li>
+                  <li>Blog</li>
+                  <li>Meetup Pro</li>
+                  <li>Careers</li>
+                  <li>Apps</li>
+                  <li>Podcast</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Follow us</h4>
+                <div style="display:flex;flex-direction: row;align-items: center;margin-top:10px;">
+                  <a href="https://www.facebook.com/meetup" class="social" style="margin-right:10px;">
+                    <i class="fa-brands fa-facebook" style="color: #f2efe3;"></i>
+                  </a>
+                  <a href="https://www.twitter.com/Meetup" class="social" style="margin-right:10px;">
+                    <i class="fa-brands fa-x-twitter" style="color:#f2efe3;"></i>
+                  </a>
+                  <a href="https://www.youtube.com/meetup" class="social" style="margin-right:10px;">
+                    <i class="fa-brands fa-youtube" style="color:#f2efe3;"></i>
+                  </a>
+                  <a href="https://www.instagram.com/meetup" class="social" style="margin-right:10px;">
+                    <i class="fa-brands fa-instagram" style="color:#f2efe3;"></i>
+                  </a>
+                  <a href="https://www.tiktok.com/@meetup" class="social">
+                    <i class="fa-brands fa-tiktok" style="color:#f2efe3;"></i>
+                  </a>
+                </div>
+                <div style="display: flex;flex-direction: row;align-items: center;margin-top:15px;">
+                  <a href="https://apps.apple.com/us/app/meetup/id375990038">
+                    <img src="assets/app-store.png" alt="App Store logo" width="120" height="40" style="margin-right:8px;" />
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.meetup&hl=en-US">
+                    <img src="assets/google-play.png" alt="Google Play" width="120" height="40" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="bottom" style="margin:auto;">
+              <span style="margin-right:12px;">© Meetup 2024</span>
+              <a style="margin-right:12px;">Terms of Service</a>
+              <a style="margin-right:12px;">Privacy Policy</a>
+              <a style="margin-right:12px;">Cookie Policy</a>
+              <a>Help</a>
+            </div>
+          </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

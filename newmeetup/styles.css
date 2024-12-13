@@ -1,0 +1,602 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#topnav {
+    width: 100vw;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topnav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Parkinsans", sans-serif;
+    margin-right: 25px;
+    color: rgb(237, 28, 64);
+    position: relative;
+}
+
+.signup {
+    background-color: rgb(237, 28, 64);
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin-right: 0px;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero p {
+    width: 620px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+    color: #535252;
+    line-height: 24px;
+}
+
+h1 {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    width: 620px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#how-it-works {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#img-for-mobile {
+    display: none;
+}
+
+#how-it-works div {
+    width: 40%;
+}
+
+#how-it-works img {
+    border-radius: 12px;
+    box-shadow: 8px 8px rgb(237, 28, 64);
+}
+
+#how-it-works p {
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    color: #535252;
+}
+
+h2 {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 48px;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search input {
+    height: 42px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(237, 28, 64);
+    padding: 5px 15px 5px 15px;
+    width: 227px;
+    font-weight: 600;
+    color: rgb(237, 28, 64);
+    font-size: 18px;
+    box-shadow: 4px 4px rgb(237, 28, 64);
+
+}
+
+#search_btn {
+    display: none;
+}
+
+#searchbtn {
+    background-color: rgb(237, 28, 64);
+    font-size: 18px;
+    height: 100%;
+    padding: 5px 15px 5px 15px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(237, 28, 64);
+    box-shadow: 0px 4px rgb(237, 28, 64);
+    border-bottom-style: solid;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#search #events, #search #location {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#search #location {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.register-btn, .join, .explore-btn {
+    border-radius: 6px;
+    padding: 7px 15px 7px 15px;
+    color: white;
+    background-color: rgb(237, 28, 64);
+    font-size: 15px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#numbers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #00455d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#numbers h3 {
+    font-size: 32px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+#numbers p {
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    width: 436px;
+    text-align: center;
+    line-height: 24px;
+    font-family: "Parkinsans", sans-serif;
+    margin-top: 0px;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+#top-categories {
+    width:1460px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+#top-categories h3, #popular-cities h3 {
+    font-size: 32px;
+    font-family: "Parkinsans", sans-serif;
+    text-align: center;
+}
+
+#category-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#category-tags .tag {
+    margin-right: 20px;
+}
+
+#blog {
+    width: 1360px;
+    margin: auto;
+    margin-top:80px;
+}
+
+#blog h3, #apps h3 {
+    font-size: 32px;
+    font-family: "Parkinsans", sans-serif;
+}
+
+#blog-header {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#top-categories li {
+    background-color: #97cad114;
+    border-radius: 6px;
+    height: 112px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Parkinsans", sans-serif;
+    padding: 5px 10px 5px 10px;
+    width: 103px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#top-categories #category-desc {
+    width: 660px;
+    text-align: center;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535252;
+}
+
+#top-categories div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tag {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00455d;
+}
+
+#popular-cities {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+
+#cities {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.city {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popular-cities img {
+    border-radius: 100%;
+}
+
+#popular-cities p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Parkinsans", sans-serif;
+}
+
+#cities p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #97cad114;
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    font-size: 34px;
+    font-weight: 700;
+    color: #00455d;
+}
+
+#posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    column-gap: 50px;
+    margin-top: 30px;
+}
+
+.thumbnail {
+    border-radius: 20px;
+}
+
+#posts-container h4 {
+    font-size: 18px;
+    font-family: 'Parkinsans', sans-serif;
+    line-height: 24px;
+    padding-right: 16px;
+}
+
+#posts-container .excerpt {
+    color: #707070;
+    font-size: 16px;
+    font-family: 'Parkinsans', sans-serif;
+    line-height: 22px;
+}
+
+#posts-container a {
+    color: #00798a;
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 16px;
+}
+
+#apps {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1169px;
+    margin-top:80px;
+}
+
+#apps h3 {
+    margin-bottom:0px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+footer h4, footer li {
+    color: white;
+    font-family: 'Parkinsans', sans-serif;
+    line-height: 28px;
+}
+
+footer h4 {
+    margin-bottom: 0px;
+    font-size:18px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top:0px;
+    padding-left:0px;
+}
+
+#bottom span, #bottom a {
+    color: white;
+    font-family: 'Parkinsans', sans-serif;
+}
+
+#bottom span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px){
+
+    #topnav {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    #hero, #how-it-works, #popular-cities {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 550px;
+    }
+
+    #top-categories {
+        width: 90vw;
+    }
+
+    #hero img {
+        width: 180px;
+        height: 160px;
+    }
+
+    #img-for-mobile {
+        display: block;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #img-for-desktop {
+        display: none;
+    }
+
+    #hero p {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #hero #search {
+        width: 500px;
+        margin-bottom: 45px;
+    }
+
+    #search #searchbtn {
+        display: none;
+    }
+
+    #search #location {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    #search_btn {
+        display: block;
+        border-radius: 12px;
+        font-size: 18px;
+    }
+
+    #how-it-works {
+        flex-direction: column;
+        width: 550px;
+        margin-bottom: 20px;
+    }
+
+    #how-it-works p {
+        margin-top: 25px;
+    }
+
+    #how-it-works div {
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #how-it-works h2 {
+        width: 100%;
+    }
+
+    #how-it-works img {
+        width: 550px;
+        height: 380px;
+    }
+
+    #top-categories div:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 25px;
+    }
+
+    #top-categories #category-desc {
+        width: 500px;
+    }
+
+    #category-tags {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 25px;
+        width: 550px;
+    }
+
+    #category-tags .tag {
+        margin-right: 0px;
+    }
+
+    #top-categories {
+        margin-bottom: 40px;
+    }
+
+    #cities {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 5px;
+        width: 100%;
+    }
+
+    .city-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .city {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    #popular-cities {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #popular-cities h3 {
+        text-align: left;
+    }
+
+    .city-name {
+        margin-bottom:0px;
+    }
+
+    
+}
