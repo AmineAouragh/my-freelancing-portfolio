@@ -73,7 +73,7 @@
         <section id="top-categories">
           <h3>Explore top categories</h3>
           <p style="font-size:17px;font-weight:500;margin-top:0px;font-family: 'Parkinsans', sans-serif;">Click on a category below to learn more</p>
-          <div>
+          <div id="categ">
             <li class="category-item" style="border-style:solid;border-width: 2px;border-color:#00455d;">
               <span>🌲</span>
               <a>Travel and Outdoor</a>
@@ -121,30 +121,30 @@
           <h3 style="margin-bottom:0px;">Popular Cities on Meetup</h3>
           <p style="margin-top:0px;margin-bottom:25px;">See what Meetup organizers are planning in cities around the country.</p>
           <div id="cities">
-            <div class="city">
+            <a href="https://www.meetup.com/find/?location=us--ny--New%20York&source=EVENTS" target="_blank" class="city">
               <img class="city-pic" src="assets/new-york-city.jpg" alt="New York City picture" width="180" height="180" />
               <p class="city-name">New York</p>
-            </div>
-            <div class="city">
+            </a>
+            <a href="https://www.meetup.com/find/?location=gb--London&source=EVENTS" target="_blank" class="city">
               <img class="city-pic" src="assets/london.jpg" alt="London picture" width="180" height="180" />
               <p class="city-name">London</p>
-            </div>
-            <div class="city">
+            </a>
+            <a href="https://www.meetup.com/find/?location=fr--Paris&source=EVENTS" target="_blank" class="city">
               <img class="city-pic" src="assets/paris.jpg" alt="Paris picture" width="180" height="180" />
               <p class="city-name">Paris</p>
-            </div>
-            <div class="city">
+            </a>
+            <a href="https://www.meetup.com/find/?location=jp--Tokyo&source=EVENTS" target="_blank" class="city">
               <img class="city-pic" src="assets/tokyo.jpg" alt="Tokyo picture" width="180" height="180" />
               <p class="city-name">Tokyo</p>
-            </div>
-            <div class="city">
+            </a>
+            <a href="https://www.meetup.com/find/?location=ae--Dubai&source=EVENTS" target="_blank" class="city">
               <img class="city-pic" src="assets/dubai.jpg" alt="Dubai picture" width="180" height="180" />
               <p class="city-name">Dubai</p>
-            </div>
-            <div class="city" style="height: 260px;">
+            </a>
+            <a href="https://www.meetup.com/find/" class="city">
               <div class="explore">+</div>
-              <p style="color:#00455d;">Explore more cities</p>
-            </div>
+              <p style="color:#00455d;margin-bottom:0px;">Explore more cities</p>
+            </a>
           </div>
           <div style="display: flex;flex-direction: column;align-items: center;">
             <p>Looking for fun things to do near you? See who&apos;s hosting local events for all the things you love.</p>
@@ -156,15 +156,15 @@
           <p>Here&apos;s an overview of how we&apos;re impacting communities in 193 countries and 10,000 cities worldwide</p>
           <div id="stats">
             <div>
-              <p style="font-size: 35px;font-weight: 700;margin-bottom:10px;">52 million+</p>
+              <p class="nb">52 million+</p>
               <p>Members on the platform</p>
             </div>
             <div>
-              <p style="font-size: 35px;font-weight: 700;margin-bottom:10px;">300000+</p>
+              <p class="nb">300000+</p>
               <p>Meetup groups</p>
             </div>
             <div>
-              <p style="font-size: 35px;font-weight: 700;margin-bottom:10px;">100000+</p>
+              <p class="nb">100000+</p>
               <p>Meetup events per week</p>
             </div>
           </div>
@@ -174,16 +174,16 @@
             <h3>Keep Connected</h3>
             <p style="font-family: 'Parkinsans', sans-serif;color:#212121;font-size:16px;line-height:22px;margin-top:0px;">Use the Meetup app to find upcoming events and keep connected to your community.</p>
             <div style="display: flex;flex-direction: row;align-items: center;">
-              <img src="assets/app-store.png" alt="App Store logo" width="196" height="65" style="margin-right:8px;" />
-              <img src="assets/google-play.png" alt="Google Play" width="196" height="65" />
+              <img class="store" src="assets/app-store.png" alt="App Store logo" width="196" height="65" style="margin-right:8px;" />
+              <img class="store" src="assets/google-play.png" alt="Google Play" width="196" height="65" />
              </div>
           </div>
-          <img src="assets/meetup-apps-image.png" width="652" height="776" alt="" />
+          <img class="app-pic" src="assets/meetup-apps-image.png" width="652" height="776" alt="" />
         </section>
         <section id="blog">
           <div id="blog-header">
             <h3>Friendships are made on Meetup</h3>
-            <button type="button" class="join">Create a Meetup Group</button>
+            <button type="button" id="create_grp" class="join">Create a Meetup Group</button>
           </div>
           <p style="margin-top: 0px; color: #707070;font-family: 'Parkinsans', sans-serif;line-height:20px;width:75%;margin-bottom: 0px;">Since 2002, members have used Meetup to make new friends, meet like-minded people, spend time on hobbies, and connect with locals over shared interests. Learn how.</p>
           <div id="posts-container">
@@ -207,11 +207,11 @@
             </div>
           </div>
         </section>
-        <footer style="width:1464px;margin-top:80px;margin-bottom:80px;padding-right:15px;padding-left:15px;background-color:rgb(237, 28, 64);border-radius:20px;">
+        <footer>
           <img src="assets/meetup-logo-notext.png" alt="Meetup Logo" height="100" width="120" />
           <div style="width:80%;display:flex;flex-direction:column;justify-content: center;">
-            <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-evenly;margin-bottom:20px;width:100%;">
-              <div style="margin-right:50px;">
+            <div id="center">
+              <div>
                 <h4>Your Account</h4>
                 <ul>
                   <li>Sign up</li>
@@ -220,7 +220,7 @@
                   <li>Become an Affiliate</li>
                 </ul>
               </div>
-              <div style="margin-right: 50px;">
+              <div>
                 <h4>Discover</h4>
                 <ul>
                   <li>Groups</li>
@@ -232,7 +232,7 @@
                   <li>Make Friends</li>
                 </ul>
               </div>
-              <div style="margin-right: 50px;">
+              <div>
                 <h4>Meetup</h4>
                 <ul>
                   <li>About</li>

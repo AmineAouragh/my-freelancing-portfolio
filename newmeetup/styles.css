@@ -81,7 +81,7 @@ h1 {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -197,7 +197,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #numbers h3 {
@@ -220,6 +220,12 @@ button:hover {
     margin-top: 0px;
 }
 
+#numbers .nb {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+
 #stats {
     display: flex;
     flex-direction: row;
@@ -230,7 +236,7 @@ button:hover {
 
 #top-categories {
     width:1460px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,6 +248,7 @@ button:hover {
     font-size: 32px;
     font-family: "Parkinsans", sans-serif;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 #category-tags {
@@ -321,6 +328,11 @@ button:hover {
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
+}
+
+#popular-cities a {
+    text-decoration: none;
+    color: black;
 }
 
 #cities {
@@ -404,7 +416,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 1169px;
-    margin-top:80px;
+    margin-top:60px;
 }
 
 #apps h3 {
@@ -418,6 +430,26 @@ footer {
     justify-content: space-around;
     padding-top:50px;
     padding-bottom:50px;
+    width:1464px;
+    margin-top:80px;
+    margin-bottom:80px;
+    padding-right:15px;
+    padding-left:15px;
+    background-color:rgb(237, 28, 64);
+    border-radius:20px;
+}
+
+#center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom:20px;
+    width:100%;
+}
+
+#center div {
+    margin-right: 50px;
 }
 
 footer h4, footer li {
@@ -538,7 +570,7 @@ footer ul {
         height: 380px;
     }
 
-    #top-categories div:first-of-type {
+    #top-categories #categ {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, auto);
@@ -549,16 +581,15 @@ footer ul {
         width: 500px;
     }
 
-    #category-tags {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        row-gap: 25px;
-        width: 550px;
-    }
-
     #category-tags .tag {
         margin-right: 0px;
+    }
+
+    #category-tags {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+
     }
 
     #top-categories {
@@ -583,6 +614,11 @@ footer ul {
         margin-bottom: 0px;
     }
 
+    .explore {
+        height: 150px;
+        width: 150px;
+    }
+
     #popular-cities {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -598,5 +634,110 @@ footer ul {
         margin-bottom:0px;
     }
 
+    #numbers {
+        width: 100vw;
+    }
+
+    #numbers p {
+        width: auto;
+    }
+
+    #stats .nb {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    #stats p {
+        font-size: 14px;
+    }
+
+    #stats {
+        width: 550px;
+        justify-content: center;
+    }
+
+    #stats div {
+        width: 180px;
+    }
+
+    #apps {
+        flex-direction: column;
+        width: 550px;
+        margin-top: 20px;
+    }
+
+    #apps p {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .store {
+        width: 160px;
+        height: 50px;
+    }
+
+    .app-pic {
+        width: 450px;
+        height: 550px;
+        margin-top: 20px;
+    }
+
+    #blog {
+        margin-top: 40px;
+        width: 550px;
+    }
+
+    #create_grp {
+        display: none;
+    }
+
+    #blog-header h3 {
+        font-size: 26px;
+    }
+
+    #blog p {
+        width: 100%;
+    }
+
+    #posts-container {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        width: 550px;
+    }
+
+    #center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 15px;
+        margin: auto;
+    }
+
+    #center div {
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #center li {
+        text-align: center;
+    }
+
+    footer #bottom {
+        flex-direction: column;
+    }
     
 }
