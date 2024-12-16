@@ -1,7 +1,5 @@
 body {
     margin: 0px;
-    padding: 0px;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -740,4 +738,265 @@ footer ul {
         flex-direction: column;
     }
     
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+
+    /*Top navigation*/
+
+    #topnav {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    #hero, #how-it-works, #popular-cities, #top-categories {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 90%;
+    }
+
+    #hero img {
+        width: 160px;
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 25px;
+        width: 460px;
+        line-height: 30px;
+    }
+
+    #hero p {
+        width: 90%;
+    }
+
+    #hero #search {
+        width: 90%;
+        margin-bottom: 45px;
+    }
+
+    #search #searchbtn {
+        display: none;
+    }
+
+    #search #location {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    #search_btn {
+        display: block;
+        border-radius: 12px;
+        font-size: 18px;
+    }
+
+    /*How it works section*/
+
+    #img-for-mobile {
+        display: block;
+    }
+
+    h2 {
+        font-size: 20px;
+        width: 90%;
+        line-height: 30px;
+    }
+
+    #img-for-desktop {
+        display: none;
+    }
+
+    #how-it-works {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #how-it-works p {
+        margin-top: 25px;
+    }
+
+    #how-it-works div {
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #how-it-works img {
+        width: 450px;
+        height: 280px;
+    }
+
+    #top-categories #categ {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 25px;
+    }
+
+    #top-categories #category-desc {
+        width: 500px;
+    }
+
+    #category-tags .tag {
+        margin-right: 0px;
+    }
+
+    #category-tags {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+
+    }
+
+    #top-categories {
+        margin-bottom: 40px;
+    }
+
+    #cities {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 5px;
+        width: 100%;
+    }
+
+    .city-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .city {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .explore {
+        height: 150px;
+        width: 150px;
+    }
+
+    #popular-cities {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #popular-cities h3 {
+        text-align: left;
+    }
+
+    .city-name {
+        margin-bottom:0px;
+    }
+
+    #numbers {
+        width: 100vw;
+    }
+
+    #numbers p {
+        width: auto;
+    }
+
+    #stats .nb {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    #stats p {
+        font-size: 14px;
+    }
+
+    #stats {
+        width: 550px;
+        justify-content: center;
+    }
+
+    #stats div {
+        width: 180px;
+    }
+
+    #apps {
+        flex-direction: column;
+        width: 550px;
+        margin-top: 20px;
+    }
+
+    #apps p {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .store {
+        width: 160px;
+        height: 50px;
+    }
+
+    .app-pic {
+        width: 450px;
+        height: 550px;
+        margin-top: 20px;
+    }
+
+    #blog {
+        margin-top: 40px;
+        width: 550px;
+    }
+
+    #create_grp {
+        display: none;
+    }
+
+    #blog-header h3 {
+        font-size: 26px;
+    }
+
+    #blog p {
+        width: 100%;
+    }
+
+    #posts-container {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        width: 550px;
+    }
+
+    #center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 15px;
+        margin: auto;
+    }
+
+    #center div {
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #center li {
+        text-align: center;
+    }
+
+    footer #bottom {
+        flex-direction: column;
+    }
 }
